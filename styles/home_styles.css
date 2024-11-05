@@ -1,1 +1,29 @@
-* {background-color: pink;}
+@import "./reset.css";
+@import "../assets/fonts/fonts.css";
+
+:root {
+    /* Colors */
+    --color-primary: #ED1C24;
+    --color-black: #191919;
+    --color-white: #FFFFFF;
+    --color-darker-gray: #CCCCCC;
+    --color-lighter-gray: #FAFAFA;
+}
+
+* {
+    background-color: pink;
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img-logo {
+    display: block;
+}
