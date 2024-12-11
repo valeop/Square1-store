@@ -1,0 +1,98 @@
+.product-card {
+    border: solid 1px var(--color-border-card);
+    border-radius: 2rem;
+    padding: 2rem;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card_image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: contain;
+    background-color: var(--color-lighter-gray);
+    border-radius: 1.25rem;
+    margin-block-end: 1.4rem;
+}
+
+.product-card_title {
+    color: var(--color-black);
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.product-card_brand {
+    display: block;
+    color: var(--color-button);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-block-end: 0.5rem;
+}
+
+.product-card_prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    color: var(--color-black);
+    font-weight: 500;
+    font-size: 2rem;
+    color: var(--color-black);
+    font-weight: 500;
+    font-size: 2rem;
+    gap: 1.3rem;
+    margin-block-end: 1rem;
+}
+
+.product-card_prices>.product-card_discount-price {
+    font-size: 3rem;
+}
+
+.product-card_prices>.product-card_original-price {
+    color: var(--color-original-price);
+    text-decoration: line-through;
+}
+
+.product-card_colors {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-block-end: 1.5rem;
+}
+
+.product-color {
+    width: 3.5rem;
+    height: 3.5rem;
+    aspect-ratio: 1;
+    border-radius: 12.5rem;
+    transition: all 150ms;
+    cursor: pointer;
+    border: solid 1px transparent;
+}
+
+.product-color:hover {
+    border: solid 1px var(--color-primary);
+}
+
+.product-card_buy {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-size: 2rem;
+    border: solid 1px var(--color-primary);
+    border-radius: 1.2rem;
+    color: var(--color-primary);
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 150ms;
+}
+
+.product-card_buy:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}

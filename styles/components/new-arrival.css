@@ -1,0 +1,114 @@
+.new-arrivals {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.new-arrivals-top {
+    width: 100%;
+}
+
+.new-arrivals-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    margin-block-end: 7rem;
+}
+
+.new-arrivals-header>.title {
+    color: var(--color-black);
+    font-size: 5rem;
+    font-size: 700;
+}
+
+.new-arrivals-header>.description {
+    color: var(--color-paragraph);
+    max-width: 614px;
+    margin-inline: auto;
+    text-align: center;
+    font-size: 2rem;
+    text-wrap: pretty;
+}
+
+.new-arrivals-filters {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.new-arrivals-filters-select {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.new-arrivals-filters-select>label {
+    color: var(--color-black);
+    font-size: 2rem;
+    font-family: "Poppins";
+}
+
+.new-arrivals-filters-select>select {
+    font-size: 2rem;
+    background-color: var(--color-lighter-gray);
+    color: var(--color-paragraph);
+    border: solid 1px var(--color-darker-gray);
+    padding: 1rem 2rem;
+    font-family: "Poppins";
+    border-radius: 1rem;
+}
+
+.filter-btn {
+    border: none;
+    background-color: var(--color-lighter-gray);
+    color: var(--color-button);
+
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    font-family: "Poppins";
+    border-radius: 1.4rem;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.filter-btn.active {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    box-shadow: 0px 0px 10px 0px rgba(237, 28, 36, 0.25);
+}
+
+.filter-btn:not(.active):hover {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    color: var(--color-black);
+}
+
+.new-arrivals-bottom {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .new-arrivals-filters {
+        display: flex;
+    }
+
+    .new-arrivals-filters-select {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .filter-btn {
+        width: 207px;
+        height: 56px;
+    }
+}

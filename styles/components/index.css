@@ -1,0 +1,14 @@
+@import "./header.css";
+@import "./footer.css";
+@import "./new-arrival.css";
+@import "./product-card.css";
+@import "./assurance.css";
+
+.main {
+    width: 100%;
+    max-width: 1280px;
+    min-height: calc(100dvh - 110.78px);
+    padding: 2rem;
+    box-sizing: border-box;
+    margin-inline: auto;
+}

@@ -1,0 +1,22 @@
+.assurance-container {
+    display: flex;
+    gap: 12rem;
+    justify-content: center;
+}
+
+.assurance-content {
+    display: flex;
+    gap: 2rem;
+}
+
+.assurance-text>.title {
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: var(--color-assurance);
+}
+
+.assurance-text>.description {
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--color-assurance);
+}
