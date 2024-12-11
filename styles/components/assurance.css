@@ -1,7 +1,15 @@
+.assurance {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
 .assurance-container {
     display: flex;
-    gap: 12rem;
-    justify-content: center;
+    flex-direction: row;
+    gap: 14rem;
+    padding: 2rem;
+    margin-block-end: 15rem;
 }
 
 .assurance-content {
