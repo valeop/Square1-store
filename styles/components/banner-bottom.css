@@ -4,12 +4,12 @@
     justify-content: center;
     align-items: center;
     max-width: 1920px;
-    height: 443px;
     background-image: url("https://s3-alpha-sig.figma.com/img/ca59/205d/9c1a1c85c11c236f9317b811fa709f36?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=L-TFFFX09SUnvhn-NTp28koCJU5U1JKI54D1HL4TI3K8gvlqswZYBZFE4BzRYWACXFoFjheOsdr222MpNvef9xYKGtplNqg0YOKOSWwAYg~Qjb2Z6bePdgXMFhcZU5tPoQPnM6D3T-4l1AOTgoDWn4dUMmsKLbOvCw4uJEB-OGnOrvmU0GgVe9Yn42i4MJMVfNRkWnCIs-m-aus9pLF8kR3zYWmliy5ufv7~cHLfnWYTFlN3D6sYhvo5PPojg5rMEaK8WxQMpgCFTXdx6ebGKfoO6ROBJx88zxI7c4y80sCBzaMB2MN6BH22PCY2Xs561Lb6Sjum8DockdWd-83eDA__");
     background-size: cover;
-    background-position: 50% 38%;
+    background-position: 50% 37%;
     box-sizing: border-box;
 }
+
 
 .banner-layer {
     width: 100%;
@@ -18,7 +18,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(50, 48, 48, 0.5);
+    background-color: rgba(30, 28, 28, 0.5);
+    backdrop-filter: blur(5px) contrast(1.2);
 }
 
 .banner-bottom-text {
@@ -36,6 +37,7 @@
 .banner-bottom-text>.top-text {
     font-size: 3rem;
     font-weight: 600;
+    margin-block-start: 14rem;
 
 }
 
@@ -59,6 +61,7 @@
     background-color: var(--color-primary);
     border: solid 1px transparent;
     margin-block-start: 1.2rem;
+    margin-block-end: 10rem;
     color: var(--color-white);
     cursor: pointer;
 }
