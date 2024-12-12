@@ -2,8 +2,8 @@
 @import "./footer.css";
 @import "./new-arrival.css";
 @import "./product-card.css";
-@import "./assurance.css";
 @import "./banner-bottom.css";
+@import "./banner-top.css";
 
 .main {
     width: 100%;
