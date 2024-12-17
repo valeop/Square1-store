@@ -29,10 +29,12 @@ const productCard = document.createElement("article");
 
 productCard.classList.add("product-card");
 productCard.innerHTML = `
-<img class="product-card_image"
-    src="${product.image.src}"
-    alt="${product.image.alt}">
-<h3 class="product-card_title">${product.name}</h3>
+<a href="#">
+    <img class="product-card_image" src="${product.image.src}" alt="${product.image.alt}">
+</a>
+<a href="#" style="text-decoration: none;">
+    <h3 class="product-card_title">${product.name}</h3>
+</a>
 <span class="product-card_brand">${product.brand}</span>
 <div class="product-card_prices">
     <!-- Discount price -->

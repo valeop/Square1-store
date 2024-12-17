@@ -1,5 +1,8 @@
 /* Banner top */
 .banner-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #DBD0CCCC;
 }
 
@@ -8,50 +11,62 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 9rem;
-    padding-bottom: 14rem;
-    gap: 15rem;
+    padding-top: 4rem;
+    padding-bottom: 7rem;
+    gap: 3rem;
+    transition: all 300ms;
+
+}
+
+.top-image {
+    width: 80px;
+    transition: all 300ms;
 }
 
 .banner-top-content {
-    width: 466px;
+    max-width: 466px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: start;
+    transition: all 300ms;
 }
 
 .banner-top-content>.subtitle {
     font-family: "Roboto";
-    font-size: 2.7rem;
+    font-size: 1.3rem;
     font-weight: 400;
     text-transform: uppercase;
+    transition: all 300ms;
 }
 
 .banner-top-content>.title {
     color: #A86A3D;
     font-family: "Roboto";
-    font-size: 6rem;
+    font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
 
     padding-bottom: 1rem;
     padding-top: 1rem;
-    margin-block-start: 2rem;
+    margin-block-start: 0.5rem;
+    transition: all 300ms;
 }
 
 .banner-top-content>.top-button {
     font-family: "Roboto";
-    font-size: 1.7rem;
+    font-size: 1rem;
     font-weight: 700;
     background-color: transparent;
 
     border: solid 1px #323334;
     border-radius: 0.7rem;
-    padding: 1.9rem 4rem;
+    padding: 0.8rem 1rem;
     margin-left: 1.5rem;
-    margin-block-start: 4rem;
+    margin-block-start: 0.5rem;
     cursor: pointer;
-    transition: all 150ms;
+    transition: all 300ms;
+
 }
 
 .banner-top-content>.top-button:hover {
@@ -74,11 +89,147 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 
 
-    gap: 8rem;
-    margin-block-end: 10rem;
-    margin-block-start: 10rem;
+    gap: 3rem;
+    margin-block-end: 3rem;
+    margin-block-start: 3rem;
+    padding: 1rem;
+    transition: all 300ms;
+    flex-wrap: wrap;
 }
 
-.brand-logo {}
+.brand-logo {
+    width: 80px;
+    transition: all 300ms;
+}
+
+@media screen and (min-width: 768px) {
+    /* Banner top */
+    .banner-top-container {
+        gap: 6rem;
+        padding-top: 5rem;
+        padding-bottom: 9rem;
+    }
+
+    .top-image {
+        width: 170px;
+    }
+
+    .banner-top-content {
+        width: 39%;
+    }
+
+    .banner-top-content>.subtitle {
+        font-size: 1.5rem;
+    }
+
+    .banner-top-content>.title {
+        font-size: 3rem;
+        margin-block-start: 1rem;
+    }
+
+    .banner-top-content>.top-button {
+        font-size: 1.3rem;
+        padding: 0.9rem 3rem;
+        margin-block-start: 1rem;
+    }
+
+    /* Brands nav */
+    .brands-container {
+        gap: 6rem;
+    }
+
+    .brand-logo {
+        width: 100px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    /* Banner top */
+    .banner-top-container {
+        gap: 9rem;
+        padding-top: 7rem;
+        padding-bottom: 11rem;
+    }
+
+    .top-image {
+        width: 240px;
+    }
+
+    .banner-top-content {
+        width: 40%;
+    }
+
+    .banner-top-content>.subtitle {
+        font-size: 2rem;
+    }
+
+    .banner-top-content>.title {
+        font-size: 4rem;
+        margin-block-start: 1rem;
+    }
+
+    .banner-top-content>.top-button {
+        font-size: 1.7rem;
+        padding: 1.9rem 4rem;
+        margin-block-start: 2rem;
+    }
+
+    /* Brands nav */
+    .brands-container {
+        gap: 7rem;
+        margin-block-end: 6rem;
+        margin-block-start: 6rem;
+    }
+
+    .brand-logo {
+        width: 140px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    /* Banner top */
+    .banner-top-container {
+        gap: 15rem;
+        padding-top: 11rem;
+        padding-bottom: 15rem;
+    }
+
+    .top-image {
+        width: max-content;
+    }
+
+    .banner-top-content {
+        width: max-content;
+    }
+
+    .banner-top-content>.subtitle {
+        font-size: 2.7rem;
+    }
+
+    .banner-top-content>.title {
+        font-size: 6rem;
+        margin-block-start: 2rem;
+    }
+
+    .banner-top-content>.top-button {
+        font-size: 1.8rem;
+        padding: 1.9rem 4rem;
+        margin-block-start: 4rem;
+    }
+
+    /* Brands nav */
+    .brands-container {
+        gap: 8rem;
+        margin-block-end: 10rem;
+        margin-block-start: 10rem;
+    }
+
+    .brand-logo {
+        width: max-content;
+    }
+}
