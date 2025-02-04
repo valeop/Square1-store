@@ -4,6 +4,9 @@
 @import "./product-card.css";
 @import "./banner-bottom.css";
 @import "./banner-top.css";
+@import "./shop-aside.css";
+@import "./shop-products.css";
+@import "./shop-product-card.css";
 
 .main {
     width: 100%;

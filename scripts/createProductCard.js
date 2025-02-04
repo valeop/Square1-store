@@ -57,9 +57,9 @@ const createProductCard = (product) => {
 
 newArrivalsContent.innerHTML = "";
 
-const getProducts = async () => {
-    return fetch("https://fakestoreapi.com/products").then((response) => response.json());
-};
+// const getProducts = async () => {
+//     return fetch("https://fakestoreapi.com/products").then((response) => response.json());
+// };
 
 const mountProducts = async () => {
     const products = await getProducts();
@@ -88,11 +88,11 @@ const mountProducts = async () => {
 
 mountProducts();
 
-// createProductCard(product);
-// createProductCard(product);
-// createProductCard(product);
-// createProductCard(product);
-// createProductCard(product);
-// createProductCard(product);
-// createProductCard(product);
-// createProductCard(product);
+createProductCard(product);
+createProductCard(product);
+createProductCard(product);
+createProductCard(product);
+createProductCard(product);
+createProductCard(product);
+createProductCard(product);
+createProductCard(product);

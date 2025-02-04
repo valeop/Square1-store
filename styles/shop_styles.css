@@ -1,3 +1,12 @@
-* {
-    background-color: lightgoldenrodyellow;
+@import "./reset.css";
+@import "../assets/fonts/fonts.css";
+@import "./components/index.css";
+
+h3 {
+    font-family: "Volkhov";
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
 }

@@ -95,7 +95,7 @@
 @media screen and (min-width: 1024px) {
     .header-nav {
         display: flex;
-        gap: 10rem;
+        gap: 9rem;
         padding: 1rem;
     }
 
