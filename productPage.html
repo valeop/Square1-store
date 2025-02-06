@@ -50,7 +50,7 @@
                     </svg>
                 </a>
                 <!-- Shopping cart -->
-                <a href="#" class="header-icon icons-cart">
+                <a href="#" class="header-icon icons-cart" id="shopping-cart-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <g stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             fill="none">
@@ -110,6 +110,26 @@
             </aside>
             <img src="https://trueshop.co/cdn/shop/files/Signature-T-Shirt---Pine-Green-5_800x.jpg?v=1738204210"
                 alt="signature t-shirt pine green">
+
+            <!-- Mobile version -->
+            <article class="product-images-bar">
+                <div class="image-bar-box">
+                    <img src="https://trueshop.co/cdn/shop/files/Signature-T-Shirt---Pine-Green-1_800x.jpg?v=1738204209"
+                        alt="Signature T-Shirt - Pine Green">
+                </div>
+                <div class="image-bar-box aside-image-selected">
+                    <img src="https://trueshop.co/cdn/shop/files/Signature-T-Shirt---Pine-Green-5_800x.jpg?v=1738204210"
+                        alt="Signature T-Shirt - Pine Green">
+                </div>
+                <div class="image-bar-box">
+                    <img src="https://trueshop.co/cdn/shop/files/Signature-T-Shirt---Pine-Green-2_800x.jpg?v=1738204210"
+                        alt="Signature T-Shirt - Pine Green">
+                </div>
+                <div class="image-bar-box">
+                    <img src="https://trueshop.co/cdn/shop/files/Signature-T-Shirt---Pine-Green-4_800x.jpg?v=1738204210"
+                        alt="Signature T-Shirt - Pine Green">
+                </div>
+            </article>
         </section>
         <section class="product-content-block">
             <div class="product-content-top">
@@ -313,7 +333,7 @@
         <article class="mini-cart-block">
             <div class="mini-cart-top">
                 <h1>Shopping Cart</h1>
-                <button class="cancel-btn">
+                <button class="cancel-btn" id="close-mini-cart">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-x">
@@ -367,6 +387,7 @@
             </div>
         </article>
     </div>
+    <script src="./scripts/productPage.js" type="module"></script>
 </body>
 
 </html>

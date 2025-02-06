@@ -1,12 +1,15 @@
 @import "./header.css";
 @import "./footer.css";
-@import "./new-arrival.css";
-@import "./product-card.css";
-@import "./banner-bottom.css";
-@import "./banner-top.css";
+@import "./home-new-arrival.css";
+@import "./home-product-card.css";
+@import "./home-banner-bottom.css";
+@import "./home-banner-top.css";
 @import "./shop-aside.css";
 @import "./shop-products.css";
 @import "./shop-product-card.css";
+@import "./productPage-minicart.css";
+@import "./productPage-images.css";
+@import "./productPage-content.css";
 
 .main {
     width: 100%;

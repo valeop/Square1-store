@@ -1,2 +1,3 @@
-import "./categories.js";
-import "./createProductCard.js";
+import "./homeCategories.js";
+import "./homeCreateProductCard.js";
+import "./header.js";

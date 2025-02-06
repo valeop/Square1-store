@@ -1,0 +1,456 @@
+/*PRODUCT CONTENT*/
+.product-content-block {
+    max-width: 700px;
+    width: 100%;
+    transition: all 300ms;
+}
+
+.product-content-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.product-title {
+    font-family: "Volkhov";
+    font-size: 3.6rem;
+    font-weight: 400;
+}
+
+.product-star-btn {
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    border: solid 1px #EEEEEE;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 150ms;
+}
+
+.product-star-btn:hover {
+    box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.2);
+    color: var(--color-primary);
+}
+
+.product-content-rate {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    gap: 1rem;
+}
+
+.product-content-rate,
+.product-rate-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.product-rate-box>a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+.product-content-rate>span {
+    font-family: "Jost";
+    font-size: 2rem;
+}
+
+.product-content-price {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 3.5rem;
+    gap: 1.5rem;
+}
+
+.product-discount {
+    font-family: "Volkhov";
+    font-size: 3rem;
+}
+
+.product-price {
+    color: #666666;
+    font-family: "Jost";
+    font-size: 2rem;
+    text-decoration: line-through;
+}
+
+.product-price-message {
+    border-radius: 5rem;
+    color: var(--color-white);
+    background-color: #DA3F3F;
+    font-family: "Jost";
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+}
+
+.product-content-views {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 3rem 0rem 4rem 0rem;
+    gap: 1rem;
+}
+
+.product-content-views>span {
+    color: var(--color-button);
+}
+
+.product-content-discount-time {
+    align-items: center;
+    background-color: #FDEFEE;
+    border: solid 1px #F8CCCC;
+    border-radius: 0.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 3rem 2rem 2rem;
+}
+
+.product-content-discount-time>span {
+    color: #FF706B;
+    font-family: "Volkhov";
+    font-size: 1.4rem;
+    font-weight: 400;
+    transition: all 300ms;
+}
+
+.time-box {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.time-box>span {
+    color: #FF706B;
+    font-family: "Jost";
+    font-size: 1.5rem;
+    transition: all 300ms;
+}
+
+.time-data {
+    font-weight: 600;
+}
+
+.product-content-stock {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    margin: 3rem 0rem 3.5rem 0rem;
+}
+
+.product-content-stock>span,
+.product-content-stock>span>b {
+    font-family: "Jost";
+    font-size: 2rem;
+    color: #666666;
+}
+
+.stock-bar {
+    border-radius: 2px;
+    height: 5px;
+    background-color: #DEDEDE;
+}
+
+.red-stock-bar {
+    border-radius: 2px;
+    height: 5px;
+    width: 9%;
+    background-color: #EF2D2D;
+}
+
+.product-content-size {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.product-content-size>span {
+    font-family: "Volkhov";
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.size-box {
+    display: inline-flex;
+    gap: 1.3rem;
+    margin-bottom: 2.5rem;
+}
+
+.size-btn {
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    border: solid 1px #EEEEEE;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-family: "Poppins";
+    font-size: 2.2rem;
+    background-color: transparent;
+    transition: all 150ms;
+}
+
+.size-selected {
+    background-color: black;
+    color: white;
+}
+
+.size-btn:not(.size-selected):hover {
+    color: var(--color-primary);
+    box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+.product-content-color {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    margin-bottom: 1.5rem;
+}
+
+.product-content-color>span {
+    font-family: "Volkhov";
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.product-content-color>span>b {
+    font-family: "Volkhov";
+    font-weight: 700;
+}
+
+.color-box {
+    display: inline-flex;
+    gap: 1rem;
+}
+
+.color-box>button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: solid 1px transparent;
+    cursor: pointer;
+    transition: all 150ms;
+}
+
+.color-box>button:not(.color-selected):hover {
+    box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 1) inset;
+}
+
+.color-selected {
+    box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 1) inset;
+}
+
+.product-content-quantity {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.product-content-quantity>span {
+    font-family: "Volkhov";
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.quantity-box {
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.quantity-container {
+    width: 128px;
+    border-radius: 0.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #EEEEEE;
+    font-size: 2rem;
+}
+
+.decrease-quantity-btn,
+.increase-quantity-btn {
+    width: 43px;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.input-quantity {
+    width: 40px;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    font-family: "Jost";
+}
+
+.add-cart-btn {
+    max-width: 430px;
+    width: 100%;
+    height: 45px;
+    background-color: transparent;
+    border: solid 1px black;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    font-family: "Volkhov";
+    font-size: 2rem;
+    font-weight: 400;
+    transition: all 150ms;
+}
+
+.add-cart-btn:hover {
+    background-color: black;
+    color: var(--color-white);
+}
+
+.product-content-additional-options {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-bottom: solid 1px #EEEEEE;
+    gap: 4rem;
+    margin: 7rem 0rem 3.5rem 0rem;
+    padding-bottom: 1.5rem;
+}
+
+
+
+.options-box>a {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.options-box>a>span {
+    font-family: "Jost";
+    font-size: 2rem;
+}
+
+.product-content-deliver-information {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.delivey-box,
+.shipping-return-box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.delivery-title {
+    font-family: "Valkhov";
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.delivery-data {
+    font-family: "Jost";
+    font-size: 1.5rem;
+}
+
+.product-content-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    background-color: #F8F8F8;
+    border-radius: 0.6rem;
+    padding: 2rem 0rem 2rem 0rem;
+    margin: 3rem 0rem 3rem 0rem;
+}
+
+.product-content-bottom>span {
+    font-family: "Volhov";
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+    .product-content-block {
+        max-width: 585px;
+        width: 60%
+    }
+
+    .product-content-discount-time>span {
+        font-size: 1.7rem;
+    }
+
+    .time-box {
+        gap: 0.5rem;
+    }
+
+    .time-box>span {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .product-content-block {
+        width: 70%
+    }
+
+    .product-content-discount-time>span {
+        font-size: 2rem;
+
+    }
+
+    .time-box {
+        padding: 0rem 1.5rem 0rem 1.5rem;
+        gap: 2rem;
+    }
+
+    .time-box>span {
+        font-size: 2rem;
+    }
+
+    .product-content-additional-options {
+        justify-content: start;
+    }
+
+    .delivey-box,
+    .shipping-return-box {
+        justify-content: start;
+    }
+
+    .delivery-title {
+        font-size: 2.3rem;
+    }
+
+    .delivery-data {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .product-content-block {
+        width: 100%;
+    }
+
+    .product-content-discount-time>span {
+        font-size: 2.2rem;
+
+    }
+
+    .time-box>span {
+        font-size: 2.6rem;
+    }
+
+
+
+}
