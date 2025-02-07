@@ -127,8 +127,9 @@
         </div>
         <article class="cart-bottom">
             <div class="cart-check-wrap">
-                <input id="wrap-check" type="checkbox">
-                <label for="wrap-check" class="cart-check-message">For <b>$10.00</b> please wrap the product</label>
+                <input id="cart-wrap-check" type="checkbox">
+                <label for="cart-wrap-check" class="cart-check-message">For <b>$10.00</b> please wrap the
+                    product</label>
             </div>
             <div class="cart-subtotal-box">
                 <span>Subtotal</span>
@@ -139,11 +140,10 @@
                 <span>Free</span>
             </div>
             <div class="cart-confirm">
-                <button class="cart-confirm-btn">Comprar</button>
+                <button class="cart-confirm-btn" id="cart-buy-btn">Comprar</button>
             </div>
         </article>
     </main>
-
     <footer class="footer">
         <div class="footer-content">
             <a href="/home.html">
@@ -159,6 +159,7 @@
             </nav>
         </div>
     </footer>
+    <script src="./scripts/cartPage.js" type="module"></script>
 </body>
 
 </html>
